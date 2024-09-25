@@ -22,7 +22,7 @@
       <h2>CLEMENT SYLVAIN</h2>
       <p>
         étudiant en développement web et mobile, passionné par la création
-        d'interfaces intuitives et l'optimisation d'expériences utilisateurs.
+        d'interfaces intuitives et l'optimisation d'expériences utilisateurs
       </p>
       <img src="@/assets/img/Html.png" alt="HTML5" />
       <img src="@/assets/img/CSS.png" alt="CSS3" />
@@ -41,7 +41,7 @@
   <!-- Section Créations -->
   <section class="creations">
     <h2>CREATIONS</h2>
-    <div>
+    <div class="cartes">
       <div>
         <img
           src="@/assets/img/image cv .png"
@@ -71,17 +71,22 @@
 
   <!-- Section Contact -->
   <section class="contact">
+    <div class="line-left"></div>
     <h2>CONTACT</h2>
+    <div class="line-right"></div>
     <form action="#" method="post">
-      <label for="name">Nom prénom :</label>
-      <input type="text" id="name" name="name" /><br />
-
-      <label for="subject">Objet :</label>
-      <input type="text" id="subject" name="subject" /><br />
-
-      <label for="message">Message :</label>
-      <textarea id="message" name="message"></textarea><br />
-
+      <div class="form-group">
+        <label for="name">Nom prénom :</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div class="form-group">
+        <label for="subject">Objet :</label>
+        <input type="text" id="subject" name="subject" />
+      </div>
+      <div class="form-group">
+        <label for="message">Message :</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
       <input type="submit" value="Soumettre" />
     </form>
   </section>
