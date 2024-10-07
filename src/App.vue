@@ -93,16 +93,18 @@
 
   <!-- Pied de page -->
   <footer>
-    <p>dernière mise à jour : 09/09/2024</p>
-    <div>
-      <a href="https://www.linkedin.com">
+    <p>dernière mise à jour : 07/10/2024</p>
+    <div class="liens-socials">
+      <!-- Je n'ai pas de compte linkedin, ce lien redirige vers la page d'acceuil -->
+      <a href="https://www.linkedin.com" target="_blank">
         <img src="@/assets/img/LinkedIn.png" alt="LinkedIn" />
       </a>
-      <a href="https://github.com">
+      <a href="https://github.com/JACKZINH" target="_blank">
         <img src="@/assets/img/GitHub.png" alt="GitHub" />
       </a>
-      <a href="https://twitter.com">
-        <img src="@/assets/img/X.png" alt="Twitter" />
+      <!-- Je n'ai pas de compte X, ce lien redirige vers la page d'acceuil -->
+      <a href="https://x.com/home" target="_blank">
+        <img src="@/assets/img/X.png" alt="X" />
       </a>
     </div>
   </footer>
