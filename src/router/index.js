@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import Notfound from "@/views/Notfound.vue";
+import Accueil from "@/views/Accueil.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,9 +8,13 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: HomeView,
+      component: Accueil, // Page d'accueil
+    },
+    {
+      path: "/:pathMatch(.*)*",
+      name: "notfound",
+      component: Notfound, // Page 404
     },
   ],
 });
-
 export default router;
