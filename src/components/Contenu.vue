@@ -1,5 +1,5 @@
 <template>
-  <div class="lescreations">
+  <div id="creations" class="lescreations">
     <h1>CRÉATIONS</h1>
 
     <!-- Affichage de chaque création -->
@@ -39,6 +39,7 @@ const creations = ref([
     titre: "Cahier des charges",
     image: "/src/assets/img/image cahier des charges.png",
     techno: "HTML, CSS",
+    lien: "https://www.dropbox.com/scl/fi/6n1f7qf2e5nwfnf7qj6jn/Cahier-des-charges-La-Socketterie-fini.pdf?rlkey=c6ag10dzafj1zz6mms5k0uv0i&st=sawnnzvt&dl=0",
   },
   {
     titre: "Dynamiser un espace commentaire",
@@ -71,6 +72,7 @@ const openModale = (creation) => {
 }
 button {
   border-radius: 10%;
+  background-color: #fafafa;
 }
 h1 {
   font-family: "Roboto", sans-serif;

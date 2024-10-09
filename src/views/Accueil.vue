@@ -1,7 +1,8 @@
 <template>
+  <!-- Composant Header affichable sur toutes les pages -->
   <Header></Header>
   <!-- Section Profil / Compétences -->
-  <section class="introduction">
+  <section id="introduction" class="introduction">
     <div class="designer">
       <p class="designercoder">designer</p>
       <p>concevoir des designs sur mesure qui renforcent votre identité</p>
@@ -31,7 +32,7 @@
   <Contenu></Contenu>
 
   <!-- Section Contact -->
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="line-left"></div>
     <h2>CONTACT</h2>
     <div class="line-right"></div>
@@ -51,6 +52,7 @@
       <input type="submit" value="Soumettre" />
     </form>
   </section>
+  <!-- Composant Footer affichable sur toutes les pages -->
   <Footer></Footer>
 </template>
 

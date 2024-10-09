@@ -13,14 +13,13 @@
         <div class="cartes">
           <div>
             <img :src="creation.image" :alt="creation.titre" />
-            <!-- MODIFICATION ICI -->
+
             <p>{{ creation.titre }}</p>
-            <!-- MODIFICATION ICI -->
+
             <p>Techno utilisée : {{ creation.techno }}</p>
             <a :href="creation.lien" target="_blank" rel="noopener noreferrer"
               >VOIR LE PROJET</a
             >
-            <!-- MODIFICATION ICI -->
           </div>
         </div>
       </section>
@@ -30,10 +29,36 @@
 
 <script setup>
 // Ajout de la nouvelle propriété "creation" pour gérer la création spécifique affichée
-const props = defineProps(["revele", "toggleModale", "creation"]); // MODIFICATION ICI
+const props = defineProps(["revele", "toggleModale", "creation"]);
 </script>
 
 <style scoped>
+.creations {
+  width: auto;
+  height: 354px;
+  padding: 40px 20px;
+  background-color: #fafafa;
+}
+
+.cartes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.creations h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.creations img {
+  width: 116px;
+  height: 177px;
+}
+
 .bloc-modale {
   position: fixed;
   top: 0;
@@ -72,7 +97,7 @@ const props = defineProps(["revele", "toggleModale", "creation"]); // MODIFICATI
 .creations img {
   max-width: 100%; /* Pour que l'image prenne toute la largeur de la modale */
   height: auto; /* Pour maintenir les proportions */
-  margin-bottom: 15px; /* Espacement sous l'image */
+  margin-bottom: 10px; /* Espacement sous l'image */
   margin-left: 100px;
 }
 

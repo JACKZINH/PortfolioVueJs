@@ -2,33 +2,10 @@
 /* Import de la police Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #333;
-  color: white;
-  width: auto;
-  height: 80px;
-}
-
-header h1 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-nav a {
-  margin-left: 20px;
-  font-size: 16px;
-  color: white;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
 /* Création d'une ligne de séparation dans l'introduction */
+* {
+  font-family: "Roboto", sans-serif;
+}
 .coder {
   border-left: 1px solid #000000;
   padding-left: 10px;
@@ -73,48 +50,6 @@ nav a:hover {
 .introduction div {
   text-align: center;
   margin: 0 20px;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  color: #333;
-}
-
-h1,
-h2,
-h3 {
-  margin: 10px 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.creations {
-  width: auto;
-  height: 354px;
-  padding: 40px 20px;
-  background-color: #fafafa;
-}
-
-.cartes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px;
-}
-
-.creations h2 {
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.creations img {
-  width: 116px;
-  height: 177px;
 }
 
 .contact {
@@ -178,35 +113,4 @@ a {
 
 .contact input[type="submit"]:hover {
   background-color: #bbb;
-}
-
-footer {
-  background-color: #b9b9b9;
-  color: rgb(0, 0, 0);
-  padding: 20px;
-}
-
-footer p {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-footer img {
-  width: 45px;
-  height: 45px;
-}
-
-footer p {
-  text-align: start;
-  font-size: 10px;
-}
-footer a {
-  margin-left: 10px;
-}
-.liens-socials {
-  margin-left: 20px;
-  margin-top: 20px;
-  text-align: center;
-  width: 100%;
-  height: 100%;
 }

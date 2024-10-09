@@ -18,4 +18,35 @@
   </footer>
 </template>
 <script setup></script>
-<style></style>
+<style>
+footer {
+  background-color: #b9b9b9;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+
+footer p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+footer img {
+  width: 45px;
+  height: 45px;
+}
+
+footer p {
+  text-align: start;
+  font-size: 10px;
+}
+footer a {
+  margin-left: 10px;
+}
+.liens-socials {
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+</style>
