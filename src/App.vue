@@ -1,9 +1,12 @@
 <template>
-  <router-view />
+  <div id="app">
+    <router-view />
+  </div>
 </template>
 
-<script setup>
-import Footer from "@/components/Footer.vue";
-import Header from "@/components/Header.vue";
+<script>
+export default {
+  name: "App",
+};
 </script>
 <style></style>

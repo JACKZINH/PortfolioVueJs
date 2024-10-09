@@ -13,7 +13,7 @@
       <a href="https://x.com/home" target="_blank">
         <img src="@/assets/img/X.png" alt="X" />
       </a>
-      <p>dernière mise à jour : 07/10/2024</p>
+      <p>dernière mise à jour : 09/10/2024</p>
     </div>
   </footer>
 </template>

@@ -27,36 +27,8 @@
     </div>
   </section>
 
-  <!-- Section Créations -->
-  <section class="creations">
-    <h2>CREATIONS</h2>
-    <div class="cartes">
-      <div>
-        <img
-          src="@/assets/img/image cv .png"
-          class="cv"
-          alt="Curriculum Vitae" />
-        <p>Curriculum vitae</p>
-        <p>Techno utilisée : HTML, CSS</p>
-      </div>
-      <div>
-        <img
-          src="@/assets/img/image cahier des charges.png"
-          class="cahier"
-          alt="Cahier des charges" />
-        <p>Cahier des charges</p>
-        <p>Techno utilisée : HTML, CSS</p>
-      </div>
-      <div>
-        <img
-          src="@/assets/img/image dynamiser.png"
-          class="dynamiser"
-          alt="Dynamiser un espace commentaire" />
-        <p>Dynamiser un espace commentaire</p>
-        <p>Techno utilisée : HTML, CSS, JavaScript</p>
-      </div>
-    </div>
-  </section>
+  <!-- Affichage de Contenu avec les créations et modales -->
+  <Contenu></Contenu>
 
   <!-- Section Contact -->
   <section class="contact">
@@ -81,15 +53,19 @@
   </section>
   <Footer></Footer>
 </template>
+
 <script>
+import Contenu from "@/components/Contenu.vue";
 import Footer from "@/components/Footer.vue";
 import Header from "@/components/Header.vue";
 export default {
-  name: "Acceuil",
+  name: "Accueil",
   components: {
     Header,
     Footer,
+    Contenu,
   },
 };
 </script>
+
 <style></style>
