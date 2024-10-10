@@ -1,4 +1,5 @@
 🎨 Mon Portfolio - Vue.js
+
 Bienvenue sur mon projet de portfolio personnel, développé avec Vue.js. Ce portfolio met en avant mes compétences en tant que développeur et designer, et présente mes projets.
 
 🚀 Prérequis
@@ -23,14 +24,17 @@ Option 1 : Cloner le dépôt GitHub
 Si vous avez Git installé sur votre machine, vous pouvez cloner ce projet en utilisant la commande suivante dans votre terminal :
 
 git clone https://github.com/JACKZINH/PortfolioVueJs.git
+
 Ensuite, déplacez-vous dans le répertoire cloné :
 
 cd PortfolioVueJs
 
 Option 2 : Télécharger l'archive ZIP
+
 Si vous ne souhaitez pas utiliser Git, vous pouvez télécharger le projet sous forme d'archive .zip directement depuis GitHub :
 
 Cliquez sur le bouton Code (bouton vert) et sélectionnez Download ZIP.
+
 Extrayez les fichiers de l'archive dans un dossier de votre choix.
 
 Ouvrez un terminal et déplacez-vous dans le dossier où vous avez extrait les fichiers :
@@ -48,15 +52,16 @@ yarn install
 
 ⚙️Lancement du projet
 
-Si tu utilises Vue CLI, la commande correcte est npm run serve. Si tu as configuré ton projet différemment, comme avec Nuxt.js ou un setup spécifique, tu utiliseras peut-être npm run dev.
+Si vous utilisez Vue CLI, la commande correcte est npm run serve.  
+Si vous avez configuré le projet différemment, comme avec Nuxt.js ou un setup spécifique, vous utiliserez npm run dev.
 
-Je vais te proposer deux options selon la configuration :
+Je vais vous proposez deux options selon la configuration :
 
-Si tu utilises Vue CLI :
+Si vous utilisez Vue CLI :
 
 npm run serve
 
-Si tu utilises Nuxt.js ou une configuration différente :
+Si vous utilisez Nuxt.js ou une configuration différente :
 
 npm run dev
 
