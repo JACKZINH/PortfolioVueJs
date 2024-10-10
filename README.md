@@ -37,8 +37,8 @@ Ouvrez un terminal et déplacez-vous dans le dossier où vous avez extrait les f
 
 cd chemin/vers/le/dossier-extrait3.
 
-Installer les dépendances
-Utilisez npm ou yarn pour installer les dépendances du projet :
+Installer les dépendances,
+utilisez npm ou yarn pour installer les dépendances du projet :
 
 npm install
 
@@ -83,6 +83,9 @@ Voici un aperçu de la structure principale de ce projet :
 🛠️Technologies utilisées
 
 Vue.js : Framework JavaScript pour construire l'interface utilisateur.
+
 Vue Router : Pour la gestion des routes entre différentes sections du portfolio.
+
 CSS3 : Pour les styles et animations.
+
 Bootstrap : Pour le design responsive.
