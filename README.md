@@ -74,3 +74,9 @@ Vue Router : Pour la gestion des routes entre différentes sections du portfolio
 CSS3 : Pour les styles et animations.
 
 Bootstrap : Pour le design responsive.
+
+jQuery : Pour la manipulation avancée du DOM.
+
+Pinia : Gestion d'état pour Vue.js.
+
+Popper.js : Gestion des pop-ups et tooltips.
