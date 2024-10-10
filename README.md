@@ -30,7 +30,6 @@ cd PortfolioVueJs
 Option 2 : Télécharger l'archive ZIP
 Si vous ne souhaitez pas utiliser Git, vous pouvez télécharger le projet sous forme d'archive .zip directement depuis GitHub :
 
-Cliquez ici pour accéder au projet sur GitHub.
 Cliquez sur le bouton Code (bouton vert) et sélectionnez Download ZIP.
 Extrayez les fichiers de l'archive dans un dossier de votre choix.
 
