@@ -12,6 +12,7 @@ Vérification des prérequis
 Pour vérifier si Node.js et npm sont bien installés, exécutez les commandes suivantes dans votre terminal :
 
 node -v
+
 npm -v
 
 Si vous avez installé Yarn, vous pouvez vérifier sa version avec :
