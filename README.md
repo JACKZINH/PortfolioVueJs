@@ -52,9 +52,6 @@ yarn install
 
 ⚙️Lancement du projet
 
-Si vous utilisez Vue CLI, la commande correcte est npm run serve.  
-Si vous avez configuré le projet différemment, comme avec Nuxt.js ou un setup spécifique, vous utiliserez npm run dev.
-
 Je vais vous proposez deux options selon la configuration :
 
 Si vous utilisez Vue CLI :
