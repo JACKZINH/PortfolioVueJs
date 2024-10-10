@@ -3,6 +3,7 @@
 Bienvenue sur mon projet de portfolio personnel, développé avec Vue.js. Ce portfolio met en avant mes compétences en tant que développeur et designer, et présente mes projets.
 
 🚀 Prérequis
+
 Avant de commencer, assurez-vous d'avoir les outils suivants installés sur votre machine :
 
 Node.js (version 14.x ou supérieure) : Vous pouvez le télécharger ici : [Node.js](https://nodejs.org/fr)

@@ -71,9 +71,17 @@ const openModale = (creation) => {
   min-height: 45vh; /* Hauteur minimale de 100% de la vue */
 }
 button {
-  border-radius: 10%;
-  background-color: #fafafa;
+  background-color: #ccc;
+  padding: 5px 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-self: center;
+  width: 22%;
 }
+
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
