@@ -64,22 +64,6 @@ ou avec Yarn :
 
 yarn serve
 
-📁Structure du projet
-
-Voici un aperçu de la structure principale de ce projet :
-
-.
-├── public/ # Fichiers publics
-├── src/
-│ ├── assets/ # Images, icônes, etc.
-│ ├── components/ # Composants Vue.js
-│ ├── views/ # Pages principales
-│ ├── App.vue # Composant principal
-│ └── main.js # Point d'entrée de l'application
-├── package.json # Dépendances et scripts npm
-├── README.md # Documentation du projet
-└── vue.config.js # Configuration de Vue.js
-
 🛠️Technologies utilisées
 
 Vue.js : Framework JavaScript pour construire l'interface utilisateur.
