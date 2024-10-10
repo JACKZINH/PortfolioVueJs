@@ -1,29 +1,89 @@
-# PortfolioVueJs
+🎨 Mon Portfolio - Vue.js
+Bienvenue sur mon projet de portfolio personnel, développé avec Vue.js. Ce portfolio met en avant mes compétences en tant que développeur et designer, et présente mes projets.
 
-This template should help get you started developing with Vue 3 in Vite.
+🚀 Prérequis
+Avant de commencer, assurez-vous d'avoir les outils suivants installés sur votre machine :
 
-## Recommended IDE Setup
+Node.js (version 14.x ou supérieure) : Vous pouvez le télécharger ici : [Node.js](https://nodejs.org/fr)
+npm ou yarn : npm est installé automatiquement avec Node.js. Vous pouvez installer Yarn ici : [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Vérification des prérequis
+Pour vérifier si Node.js et npm sont bien installés, exécutez les commandes suivantes dans votre terminal :
 
-## Customize configuration
+node -v
+npm -v
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Si vous avez installé Yarn, vous pouvez vérifier sa version avec :
 
-## Project Setup
+yarn -v
 
-```sh
+🛠️Installation
+
+Option 1 : Cloner le dépôt GitHub
+Si vous avez Git installé sur votre machine, vous pouvez cloner ce projet en utilisant la commande suivante dans votre terminal :
+
+git clone https://github.com/JACKZINH/PortfolioVueJs.git
+Ensuite, déplacez-vous dans le répertoire cloné :
+
+cd PortfolioVueJs
+
+Option 2 : Télécharger l'archive ZIP
+Si vous ne souhaitez pas utiliser Git, vous pouvez télécharger le projet sous forme d'archive .zip directement depuis GitHub :
+
+Cliquez ici pour accéder au projet sur GitHub.
+Cliquez sur le bouton Code (bouton vert) et sélectionnez Download ZIP.
+Extrayez les fichiers de l'archive dans un dossier de votre choix.
+
+Ouvrez un terminal et déplacez-vous dans le dossier où vous avez extrait les fichiers :
+
+cd chemin/vers/le/dossier-extrait3.
+
+Installer les dépendances
+Utilisez npm ou yarn pour installer les dépendances du projet :
+
 npm install
-```
 
-### Compile and Hot-Reload for Development
+ou si vous préférez utiliser Yarn :
 
-```sh
+yarn install
+
+⚙️Lancement du projet
+
+Si tu utilises Vue CLI, la commande correcte est npm run serve. Si tu as configuré ton projet différemment, comme avec Nuxt.js ou un setup spécifique, tu utiliseras peut-être npm run dev.
+
+Je vais te proposer deux options selon la configuration :
+
+Si tu utilises Vue CLI :
+
+npm run serve
+
+Si tu utilises Nuxt.js ou une configuration différente :
+
 npm run dev
-```
 
-### Compile and Minify for Production
+ou avec Yarn :
 
-```sh
-npm run build
-```
+yarn serve
+
+📁Structure du projet
+
+Voici un aperçu de la structure principale de ce projet :
+
+.
+├── public/ # Fichiers publics
+├── src/
+│ ├── assets/ # Images, icônes, etc.
+│ ├── components/ # Composants Vue.js
+│ ├── views/ # Pages principales
+│ ├── App.vue # Composant principal
+│ └── main.js # Point d'entrée de l'application
+├── package.json # Dépendances et scripts npm
+├── README.md # Documentation du projet
+└── vue.config.js # Configuration de Vue.js
+
+🛠️Technologies utilisées
+
+Vue.js : Framework JavaScript pour construire l'interface utilisateur.
+Vue Router : Pour la gestion des routes entre différentes sections du portfolio.
+CSS3 : Pour les styles et animations.
+Bootstrap : Pour le design responsive.
