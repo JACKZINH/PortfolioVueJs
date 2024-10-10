@@ -39,7 +39,7 @@ Extrayez les fichiers de l'archive dans un dossier de votre choix.
 
 Ouvrez un terminal et déplacez-vous dans le dossier où vous avez extrait les fichiers :
 
-cd chemin/vers/le/dossier-extrait3.
+cd chemin/vers/le/dossier-extrait.
 
 Installer les dépendances,
 utilisez npm ou yarn pour installer les dépendances du projet :
@@ -51,8 +51,6 @@ ou si vous préférez utiliser Yarn :
 yarn install
 
 ⚙️Lancement du projet
-
-Je vais vous proposez divers options selon votre configuration :
 
 Si vous utilisez Vue CLI :
 
