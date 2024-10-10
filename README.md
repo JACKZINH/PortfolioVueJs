@@ -52,7 +52,7 @@ yarn install
 
 ⚙️Lancement du projet
 
-Je vais vous proposez deux options selon la configuration :
+Je vais vous proposez divers options selon votre configuration :
 
 Si vous utilisez Vue CLI :
 
