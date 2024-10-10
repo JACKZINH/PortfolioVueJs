@@ -7,7 +7,7 @@ Bienvenue sur mon projet de portfolio personnel, développé avec Vue.js. Ce por
 Avant de commencer, assurez-vous d'avoir les outils suivants installés sur votre machine :
 
 Node.js (version 14.x ou supérieure) : Vous pouvez le télécharger ici : [Node.js](https://nodejs.org/fr)
-npm ou yarn : npm est installé automatiquement avec Node.js. Vous pouvez installer Yarn ici : [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
+npm est installé automatiquement avec Node.js. Vous pouvez installer Yarn ici : [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
 
 Vérification des prérequis
 Pour vérifier si Node.js et npm sont bien installés, exécutez les commandes suivantes dans votre terminal :
