@@ -73,6 +73,8 @@ Vue Router : Pour la gestion des routes entre différentes sections du portfolio
 
 CSS3 : Pour les styles et animations.
 
+JavaScript : Utilisé pour des fonctionnalités interactives et des manipulations DOM.
+
 Bootstrap : Pour le design responsive.
 
 jQuery : Pour la manipulation avancée du DOM.
