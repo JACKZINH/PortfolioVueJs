@@ -62,19 +62,35 @@
 
 /* Titre CONTACT */
 .contact h2 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   text-align: center;
+  font-size: 30px;
+  margin: 5px;
 }
 
 /* Style du formulaire */
 .contact form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   width: 800px;
   margin: auto;
+  margin-top: 20px;
+}
+.titre-container {
+  display: flex; /* Utilise flex pour aligner les éléments horizontalement */
+  align-items: center; /* Centre verticalement les éléments */
+  justify-content: center;
+}
+
+.ligne-gauche,
+.ligne-droite {
+  width: 750px;
+  height: 1px;
+  margin: 0 20px;
+  background-color: #000000;
 }
 
 /* Alignement des labels à gauche des champs */
@@ -86,7 +102,7 @@
 
 .form-group label {
   width: 150px;
-  font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
 .form-group input[type="text"],
@@ -101,7 +117,7 @@
 
 /* Style du bouton de soumission */
 .contact input[type="submit"] {
-  background-color: #ccc;
+  background-color: #e7e7e7;
   padding: 10px 20px;
   border: 1px solid #999;
   border-radius: 5px;
@@ -110,7 +126,7 @@
   text-transform: uppercase;
   transition: background-color 0.3s ease;
   width: fit-content;
-  align-self: center;
+  margin-left: 665px;
 }
 
 .contact input[type="submit"]:hover {

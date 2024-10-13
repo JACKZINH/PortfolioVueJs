@@ -1,4 +1,19 @@
 <template>
+  <head>
+    <title>Accueil - Clément Sylvain</title>
+    <meta
+      name="description"
+      content="Bienvenue sur la page d'accueil du portfolio de Clément Sylvain." />
+    <meta name="keywords" content="Clément Sylvain, développeur web, accueil" />
+
+    <meta property="og:title" content="Accueil - Clément Sylvain" />
+    <meta
+      property="og:description"
+      content="Découvrez mes compétences et projets." />
+    <meta
+      property="og:url"
+      content="https://www.portfolioclement.com/accueil" />
+  </head>
   <!-- Composant Header affichable sur toutes les pages -->
   <Header></Header>
   <!-- Section Profil / Compétences -->
@@ -33,10 +48,15 @@
 
   <!-- Section Contact -->
   <section id="contact" class="contact">
-    <div class="line-left"></div>
-    <h2>CONTACT</h2>
-    <div class="line-right"></div>
-    <form action="#" method="post">
+    <div class="titre-container">
+      <div class="ligne-gauche"></div>
+      <h2>CONTACT</h2>
+      <div class="ligne-droite"></div>
+    </div>
+    <!-- Utilisation de formsubmit pour l'envoi du formulaire sur mon adresse email -->
+    <form
+      action="https://formsubmit.co/6f06738a2fce2ba3fcd46219a050df12"
+      method="POST">
       <div class="form-group">
         <label for="name">Nom prénom :</label>
         <input type="text" id="name" name="name" />

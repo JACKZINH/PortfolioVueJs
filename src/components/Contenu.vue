@@ -1,7 +1,10 @@
 <template>
   <div id="creations" class="lescreations">
-    <h1>CRÉATIONS</h1>
-
+    <div class="titre-container">
+      <div class="ligne-gauche"></div>
+      <h1>CRÉATIONS</h1>
+      <div class="ligne-droite"></div>
+    </div>
     <!-- Affichage de chaque création -->
     <div class="cartes">
       <div v-for="(creation, index) in creations" :key="index">
@@ -32,20 +35,26 @@ const creations = ref([
   {
     titre: "Curriculum vitae",
     image: "/src/assets/img/image cv .png",
+    image2: "src/assets/img/codecv.png",
     techno: "HTML, CSS",
     lien: "https://github.com/JACKZINH/Devoir-CV",
+    date: "Créer le 27 Janvier 2024",
   },
   {
     titre: "Cahier des charges",
     image: "/src/assets/img/image cahier des charges.png",
+    image2: "src/assets/img/imagecahier2.png",
     techno: "HTML, CSS",
     lien: "https://www.dropbox.com/scl/fi/6n1f7qf2e5nwfnf7qj6jn/Cahier-des-charges-La-Socketterie-fini.pdf?rlkey=c6ag10dzafj1zz6mms5k0uv0i&st=sawnnzvt&dl=0",
+    date: "Créer le 25 Février 2024",
   },
   {
     titre: "Dynamiser un espace commentaire",
     image: "/src/assets/img/image dynamiser.png",
+    image2: "src/assets/img/image2dynamiser.png",
     techno: "HTML, CSS, JavaScript",
     lien: "https://github.com/JACKZINH/devoirdynamiserunespacecommentaire",
+    date: "Créer le 02 Septembre 2024",
   },
 ]); // AJOUT D'UNE LISTE D'OBJETS POUR LES CRÉATIONS
 
@@ -68,18 +77,23 @@ const openModale = (creation) => {
 <style scoped>
 .lescreations {
   background-color: #fafafa;
-  min-height: 45vh; /* Hauteur minimale de 100% de la vue */
+  min-height: 48vh;
 }
 button {
-  background-color: #ccc;
+  background-color: #e7e7e7;
   padding: 5px 10px;
   border: 1px solid #999;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;
+  transition: background-color 0.3s ease;
   align-self: center;
   width: 22%;
+}
+
+button:hover {
+  background-color: #bbb;
 }
 
 h1 {
@@ -115,12 +129,25 @@ h1 {
 }
 
 .cartes div:hover {
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre en bas à droite */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Ombre en bas à droite */
 }
 
 .cartes p {
   font-family: "Roboto", sans-serif;
   color: #333;
   margin-top: 10px;
+}
+.titre-container {
+  display: flex; /* Utilise flex pour aligner les éléments horizontalement */
+  align-items: center; /* Centre verticalement les éléments */
+  justify-content: center;
+}
+
+.ligne-gauche,
+.ligne-droite {
+  width: 750px;
+  height: 1px;
+  margin: 0 20px;
+  background-color: #000000;
 }
 </style>

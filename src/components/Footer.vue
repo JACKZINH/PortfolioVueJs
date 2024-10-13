@@ -13,13 +13,16 @@
       <a href="https://x.com/home" target="_blank">
         <img src="@/assets/img/X.png" alt="X" />
       </a>
-      <p>dernière mise à jour : 09/10/2024</p>
+      <p>dernière mise à jour : 10/10/2024</p>
     </div>
   </footer>
 </template>
 <script setup></script>
 <style>
 footer {
+  bottom: 0;
+  width: 100%;
+  display: flex;
   background-color: #b9b9b9;
   color: rgb(0, 0, 0);
   padding: 20px;

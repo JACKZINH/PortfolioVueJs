@@ -8,18 +8,29 @@
 
       <!-- Section Créations -->
       <section class="creations">
-        <h2>CREATION</h2>
         <!-- Affichage dynamique des informations sur la création via les props -->
         <div class="cartes">
           <div>
-            <img :src="creation.image" :alt="creation.titre" />
+            <div class="image-container">
+              <img
+                class="image-principale"
+                :src="creation.image"
+                :alt="creation.titre" />
 
-            <p>{{ creation.titre }}</p>
+              <img
+                class="image-secondaire"
+                :src="creation.image2"
+                :alt="creation.titre + ' image 2'" />
+            </div>
+            <div class="text-container">
+              <p class="cvtitre">{{ creation.titre }}</p>
 
-            <p>Techno utilisée : {{ creation.techno }}</p>
-            <a :href="creation.lien" target="_blank" rel="noopener noreferrer"
-              >VOIR LE PROJET</a
-            >
+              <p>Technologies utilisées : {{ creation.techno }}</p>
+              <p>{{ creation.date }}</p>
+              <a :href="creation.lien" target="_blank" rel="noopener noreferrer"
+                >VOIR LE PROJET</a
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -33,9 +44,21 @@ const props = defineProps(["revele", "toggleModale", "creation"]);
 </script>
 
 <style scoped>
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cvtitre {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
 .creations {
   width: auto;
-  height: 354px;
+  height: 705px;
   padding: 40px 20px;
   background-color: #fafafa;
 }
@@ -46,17 +69,6 @@ const props = defineProps(["revele", "toggleModale", "creation"]);
   justify-content: space-between;
   align-items: center;
   margin: 20px;
-}
-
-.creations h2 {
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.creations img {
-  width: 116px;
-  height: 177px;
 }
 
 .bloc-modale {
@@ -86,7 +98,7 @@ const props = defineProps(["revele", "toggleModale", "creation"]);
   color: #333;
   padding: 50px;
   position: fixed;
-  top: 30%;
+  top: 10%;
 }
 
 .btn-modale {
@@ -94,21 +106,33 @@ const props = defineProps(["revele", "toggleModale", "creation"]);
   top: 10px;
   right: 10px;
 }
-.creations img {
-  max-width: 100%; /* Pour que l'image prenne toute la largeur de la modale */
-  height: auto; /* Pour maintenir les proportions */
-  margin-bottom: 10px; /* Espacement sous l'image */
-  margin-left: 100px;
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 200px;
+  margin-bottom: 20px;
+}
+.image-principale,
+.image-secondaire {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
 }
 
 .card {
-  max-width: 500px; /* Largeur maximale de la modale */
+  max-width: 1000px; /* Largeur maximale de la modale */
   width: 90%; /* Largeur à 90% pour les petits écrans */
   border-radius: 10px; /* Coins arrondis */
   overflow: hidden; /* Pour éviter le débordement */
 }
 
 .creations a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: #000000; /* Couleur du texte (par exemple, gris foncé) */
   text-decoration: none; /* Supprimer le soulignement */
   font-weight: bold; /* Rendre le texte en gras */
