@@ -1,23 +1,24 @@
 <template>
   <div id="creations" class="lescreations">
     <div class="titre-container">
+      <!-- Ligne décorative entourant le titre "CRÉATIONS" -->
       <div class="ligne-gauche"></div>
       <h1>CRÉATIONS</h1>
       <div class="ligne-droite"></div>
     </div>
-    <!-- Affichage de chaque création -->
+    <!-- Boucle "v-for" pour afficher dynamiquement chaque création -->
     <div class="cartes">
       <div v-for="(creation, index) in creations" :key="index">
+        <!-- Image et titre de chaque création -->
         <img :src="creation.image" :alt="creation.titre" />
         <p>{{ creation.titre }}</p>
         <p>Techno utilisée : {{ creation.techno }}</p>
-        <!-- Ajout du bouton pour ouvrir la modale spécifique à chaque création -->
+        <!-- Bouton qui déclenche l'ouverture de la modale pour voir plus d'infos -->
         <button @click="openModale(creation)">Voir plus</button>
       </div>
     </div>
 
-    <!-- La modale -->
-    <!-- Ajout de la propriété "creation" pour passer la création spécifique à la modale -->
+    <!-- Modale qui s'affiche si "revele" est true, avec la création sélectionnée -->
     <Modale
       v-if="revele"
       :revele="revele"
@@ -30,7 +31,7 @@
 import { ref } from "vue";
 import Modale from "@/components/Modale.vue";
 
-// Déclaration des données (data)
+// Liste des créations à afficher, chaque objet contient les informations sur une création
 const creations = ref([
   {
     titre: "Curriculum vitae",
@@ -56,11 +57,11 @@ const creations = ref([
     lien: "https://github.com/JACKZINH/devoirdynamiserunespacecommentaire",
     date: "Créer le 02 Septembre 2024",
   },
-]); // AJOUT D'UNE LISTE D'OBJETS POUR LES CRÉATIONS
+]);
 
 // Variable pour savoir quelle création est actuellement sélectionnée
 const revele = ref(false);
-const currentCreation = ref(null); // AJOUT D'UNE NOUVELLE VARIABLE POUR GARDER LA CRÉATION ACTIVE
+const currentCreation = ref(null);
 
 // Fonction pour toggler (basculer) la modale
 const toggleModale = () => {
@@ -71,13 +72,13 @@ const toggleModale = () => {
 const openModale = (creation) => {
   currentCreation.value = creation; // Définir la création sélectionnée
   toggleModale();
-}; // AJOUT D'UNE FONCTION POUR OUVRIR UNE MODALE SPÉCIFIQUE
+};
 </script>
 
 <style scoped>
 .lescreations {
   background-color: #fafafa;
-  min-height: 48vh;
+  min-height: 48vh; /* Définit la hauteur minimale pour cette section */
 }
 button {
   background-color: #e7e7e7;
@@ -87,13 +88,13 @@ button {
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; /* Animation pour l'effet de survol */
   align-self: center;
   width: 22%;
 }
 
 button:hover {
-  background-color: #bbb;
+  background-color: #bbb; /* Changement de couleur au survol */
 }
 
 h1 {
@@ -114,13 +115,13 @@ h1 {
 }
 
 .cartes div {
-  flex: 1 1 calc(30% - 10px); /* 30% de largeur, avec un espacement */
-  margin: 5px; /* Espace autour de chaque carte */
-  padding: 10px; /* Espace intérieur */
-  background: #f5f5f5; /* Couleur de fond */
-  border-radius: 8px; /* Coins arrondis */
-  text-align: center; /* Centrer le texte */
-  transition: box-shadow 0.3s ease; /* Animation pour l'ombre */
+  flex: 1 1 calc(30% - 10px);
+  margin: 5px;
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  text-align: center;
+  transition: box-shadow 0.3s ease; /* Animation pour l'effet d'ombre au survol */
 }
 
 .cartes img {
@@ -129,7 +130,7 @@ h1 {
 }
 
 .cartes div:hover {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Ombre en bas à droite */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Ombre en bas et à droite */
 }
 
 .cartes p {
@@ -138,11 +139,11 @@ h1 {
   margin-top: 10px;
 }
 .titre-container {
-  display: flex; /* Utilise flex pour aligner les éléments horizontalement */
-  align-items: center; /* Centre verticalement les éléments */
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
-
+/* Style pour le conteneur du titre avec lignes à gauche et droite */
 .ligne-gauche,
 .ligne-droite {
   width: 750px;

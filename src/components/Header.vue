@@ -1,11 +1,14 @@
 <template>
   <!-- En-tête avec logo et navigation -->
   <header>
+    <!-- Lien vers le haut de la page -->
     <a href="#top">
       <div>
+        <!-- Logo  -->
         <h1>CS</h1>
       </div>
     </a>
+    <!-- Menu de navigation -->
     <nav>
       <a href="#introduction">PRESENTATION</a>
       <a href="#creations">CREATIONS</a>
@@ -15,6 +18,7 @@
 </template>
 <script setup></script>
 <style>
+/* Style de l'en-tête */
 header {
   top: 0;
   position: fixed;
@@ -27,24 +31,26 @@ header {
   width: 100%;
   height: 80px;
 }
+/* Style des liens dans l'en-tête */
 header a {
-  text-decoration: none; /* Supprime le soulignement */
-  color: inherit; /* Garde la couleur actuelle du texte */
+  text-decoration: none;
+  color: inherit;
 }
-
+/* Changement de curseur au survol des liens */
 header a:hover {
-  cursor: pointer; /* Changer le curseur pour indiquer un lien */
+  cursor: pointer;
 }
+/* Style du titre (logo) */
 header h1 {
   font-size: 24px;
   font-weight: bold;
 }
-
+/* Style des liens dans la navigation */
 nav a {
   margin-left: 20px;
   font-size: 16px;
 }
-
+/* Ajouter un soulignement au survol des liens de navigation */
 nav a:hover {
   text-decoration: underline;
 }

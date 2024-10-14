@@ -1,19 +1,21 @@
 <template>
-  <!-- Pied de page -->
+  <!-- Pied de page avec les liens sociaux -->
   <footer>
     <div class="liens-socials">
-      <!-- Je n'ai pas de compte linkedin, ce lien redirige vers la page d'acceuil -->
+      <!-- Lien vers LinkedIn, redirige vers la page d'accueil de LinkedIn (car pas de compte personnel) -->
       <a href="https://www.linkedin.com" target="_blank">
         <img src="@/assets/img/LinkedIn.png" alt="LinkedIn" />
       </a>
+      <!-- Lien vers mon compte GitHub -->
       <a href="https://github.com/JACKZINH" target="_blank">
         <img src="@/assets/img/GitHub.png" alt="GitHub" />
       </a>
-      <!-- Je n'ai pas de compte X, ce lien redirige vers la page d'acceuil -->
+      <!-- Lien vers X (anciennement Twitter), redirige vers la page d'accueil -->
       <a href="https://x.com/home" target="_blank">
         <img src="@/assets/img/X.png" alt="X" />
       </a>
-      <p>dernière mise à jour : 10/10/2024</p>
+      <!-- Affiche la dernière date de mise à jour du site -->
+      <p>dernière mise à jour : 14/10/2024</p>
     </div>
   </footer>
 </template>
@@ -46,7 +48,6 @@ footer a {
   margin-left: 10px;
 }
 .liens-socials {
-  margin-left: 20px;
   margin-top: 20px;
   text-align: center;
   width: 100%;

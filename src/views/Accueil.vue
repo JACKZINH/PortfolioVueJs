@@ -1,11 +1,12 @@
 <template>
   <head>
     <title>Accueil - Clément Sylvain</title>
+    <!-- Métadonnées pour le SEO et les réseaux sociaux -->
     <meta
       name="description"
       content="Bienvenue sur la page d'accueil du portfolio de Clément Sylvain." />
     <meta name="keywords" content="Clément Sylvain, développeur web, accueil" />
-
+    <!-- Open Graph meta pour améliorer le partage sur les réseaux sociaux -->
     <meta property="og:title" content="Accueil - Clément Sylvain" />
     <meta
       property="og:description"
@@ -43,17 +44,18 @@
     </div>
   </section>
 
-  <!-- Affichage de Contenu avec les créations et modales -->
+  <!-- Composant qui affiche les créations et gère les modales pour plus d'interaction -->
   <Contenu></Contenu>
 
-  <!-- Section Contact -->
+  <!-- Section Contact avec un formulaire -->
   <section id="contact" class="contact">
     <div class="titre-container">
+      <!-- Ligne décorative entourant le titre "CONTACT" -->
       <div class="ligne-gauche"></div>
       <h2>CONTACT</h2>
       <div class="ligne-droite"></div>
     </div>
-    <!-- Utilisation de formsubmit pour l'envoi du formulaire sur mon adresse email -->
+    <!-- Formulaire de contact utilisant formsubmit.co pour l'envoi des messages -->
     <form
       action="https://formsubmit.co/6f06738a2fce2ba3fcd46219a050df12"
       method="POST">
@@ -72,7 +74,7 @@
       <input type="submit" value="Soumettre" />
     </form>
   </section>
-  <!-- Composant Footer affichable sur toutes les pages -->
+  <!-- Composant Footer affiché sur toutes les pages du site -->
   <Footer></Footer>
 </template>
 
