@@ -1,11 +1,4 @@
 <template>
-  <head>
-    <title>Page Introuvable</title>
-    <!-- Métadonnée SEO pour informer que la page n'existe pas -->
-    <meta
-      name="description"
-      content="La page que vous recherchez est introuvable." />
-  </head>
   <!-- Composant Header affiché sur la page 404 également -->
   <Header></Header>
   <!-- Titre principal indiquant l'erreur 404 -->

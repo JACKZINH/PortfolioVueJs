@@ -35,7 +35,7 @@ import Modale from "@/components/Modale.vue";
 const creations = ref([
   {
     titre: "Curriculum vitae",
-    image: "/src/assets/img/image cv .png",
+    image: "/src/assets/img/image-cv.png",
     image2: "src/assets/img/codecv.png",
     techno: "HTML, CSS",
     lien: "https://github.com/JACKZINH/Devoir-CV",
@@ -43,7 +43,7 @@ const creations = ref([
   },
   {
     titre: "Cahier des charges",
-    image: "/src/assets/img/image cahier des charges.png",
+    image: "/src/assets/img/image-cahier.png",
     image2: "src/assets/img/imagecahier2.png",
     techno: "HTML, CSS",
     lien: "https://www.dropbox.com/scl/fi/6n1f7qf2e5nwfnf7qj6jn/Cahier-des-charges-La-Socketterie-fini.pdf?rlkey=c6ag10dzafj1zz6mms5k0uv0i&st=sawnnzvt&dl=0",
@@ -51,7 +51,7 @@ const creations = ref([
   },
   {
     titre: "Dynamiser un espace commentaire",
-    image: "/src/assets/img/image dynamiser.png",
+    image: "/src/assets/img/image-dynamiser.png",
     image2: "src/assets/img/image2dynamiser.png",
     techno: "HTML, CSS, JavaScript",
     lien: "https://github.com/JACKZINH/devoirdynamiserunespacecommentaire",

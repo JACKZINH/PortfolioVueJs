@@ -1,20 +1,4 @@
 <template>
-  <head>
-    <title>Accueil - Clément Sylvain</title>
-    <!-- Métadonnées pour le SEO et les réseaux sociaux -->
-    <meta
-      name="description"
-      content="Bienvenue sur la page d'accueil du portfolio de Clément Sylvain." />
-    <meta name="keywords" content="Clément Sylvain, développeur web, accueil" />
-    <!-- Open Graph meta pour améliorer le partage sur les réseaux sociaux -->
-    <meta property="og:title" content="Accueil - Clément Sylvain" />
-    <meta
-      property="og:description"
-      content="Découvrez mes compétences et projets." />
-    <meta
-      property="og:url"
-      content="https://www.portfolioclement.com/accueil" />
-  </head>
   <!-- Composant Header affichable sur toutes les pages -->
   <Header></Header>
   <!-- Section Profil / Compétences -->
