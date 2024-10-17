@@ -11,6 +11,7 @@ npm est installé automatiquement avec Node.js.
 Vous pouvez installer Yarn ici : [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
 
 Vérification des prérequis
+
 Pour vérifier si Node.js et npm sont bien installés, exécutez les commandes suivantes dans votre terminal :
 
 node -v
