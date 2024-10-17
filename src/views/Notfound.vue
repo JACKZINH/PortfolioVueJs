@@ -19,7 +19,6 @@ export default {
   },
 };
 </script>
-<!-- Styles spécifiques à cette page d'erreur 404, le style est scoped -->
 <style scoped>
 h1 {
   margin-top: 100px;
